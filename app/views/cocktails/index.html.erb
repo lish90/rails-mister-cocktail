@@ -1,14 +1,25 @@
 <h1>what's up home girl</h1>
+<br>
 
 
-<% @cocktails.each do |d| %>
-<div class="">
-  <p><%= d.name %></p>
-  <%= link_to "show cocktail", cocktail_path(d) %>
+<% @cocktails.each do |cocktail| %>
+<div class="my_card_container" >
+  <div class="card_title"><h2><%= cocktail.name %></h2>
+      <br>
+    <div class="card_img"> <%= link_to "show cocktail", cocktail_path(cocktail) %>
+    </div>
+  </div>
 </div>
-<% end %>
+  <br>
 
+<% end %>
+<br>
 <%=link_to 'Create Cocktail', new_cocktail_path %>
+
+
+
+
+
 
 
 
