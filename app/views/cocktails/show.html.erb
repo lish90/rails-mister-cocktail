@@ -1,4 +1,6 @@
-<h1>drink me</h1>
+<div class="container py-2">
+
+<h1>drink me show page</h1>
 <br>
 
 <h1><%= @cocktail.name.capitalize%></h1>
@@ -19,3 +21,4 @@
 <%= link_to'delete', cocktail_path(@cocktail), method: :delete %>
 <br>
 <%= link_to 'See All Cocktail', cocktails_path %>
+<div>

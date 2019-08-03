@@ -1,21 +1,25 @@
+<div class="container py-2">
 <h1>what's up home girl</h1>
 <br>
-
-
 <% @cocktails.each do |cocktail| %>
-<div class="my_card_container" >
-  <div class="card_title"><h2><%= cocktail.name %></h2>
-      <br>
-    <div class="card_img"> <%= link_to "show cocktail", cocktail_path(cocktail) %>
+  <div class="border border-light" >
+    <div class="container py-2">
+      <div class="my_card_container" >
+        <div class="card_title"><h2><%= cocktail.name %></h2>
+          <br>
+          <div class="card_img">
+            <div class="card_show"><%= link_to "show cocktail", cocktail_path(cocktail) %>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
   <br>
-
 <% end %>
 <br>
 <%=link_to 'Create Cocktail', new_cocktail_path %>
-
+</div>
 
 
 
