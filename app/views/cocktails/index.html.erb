@@ -1,31 +1,41 @@
 <div class="container py-2">
-<h1>what's up home girl</h1>
-<br>
-<% @cocktails.each do |cocktail| %>
-  <div class="border border-light" >
-    <div class="container py-2">
-      <div class="my_card_container" >
-        <div class="card_title"><h2><%= cocktail.name %></h2>
+  <h1>what's up home girl</h1>
+    <br>
+  <div class="row">
+    <div class="col-8">
+<!--  this is for card session -->
+      <div class="card_title ">
+        <% @cocktails.each do |cocktail| %>
+          <div class="card p-3 mb-3">
+            <h2><%= cocktail.name %></h2>
+            <%= image_tag "alcoholic-citrus.jpg", alt: "alcoholic-citrus", class: "card_img",width: 400, height: 300 %>
           <br>
-          <div class="card_img">
-            <div class="card_show"><%= link_to "show cocktail", cocktail_path(cocktail) %>
-            </div>
+          <p><%= link_to "show cocktail", cocktail_path(cocktail)%></p>
           </div>
-        </div>
+        <% end %>
       </div>
     </div>
+<!-- this is the end of the card session -->
+<!--  this is for the second card session -->
+      <div class="col-4">
+        <h2>Create a Cocktail</h2>
+        <img src="" alt="">
+        <br>
+        <%=link_to 'Create Cocktail', new_cocktail_path %>
+      </div>
   </div>
-  <br>
-<% end %>
-<br>
-<%=link_to 'Create Cocktail', new_cocktail_path %>
 </div>
+<!--
 
+  a {
+  color: grey;
+  &:hover {
+    color: black;
+  }
+}
+..../images/alcohol-citrus.jpg" alt="cocktail"
 
-
-
-
-
+<img src="https://images.unsplash.com/photo-1513816861509-09733a9f9383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="cocktail" style=""> -->
 
 
 
