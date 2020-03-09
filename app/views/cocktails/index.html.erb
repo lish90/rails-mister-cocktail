@@ -4,11 +4,13 @@
     <% @cocktails.each do |cocktail| %>
       <div class="card p-3 mb-3  card_title ">
         <h2><%= cocktail.name %></h2>
-          <%= image_tag "alcoholic-citrus.jpg", alt: "alcoholic-citrus", class: "card_img",width: 400, height: 300 %>
+          <div class="card-image">
+          <%= cocktail.picture_url %>
+          </div>
             <br>
-              <%= link_to "show cocktail", cocktail_path(cocktail)%>
-              <%= link_to "Delete", method: :delete %>
-              <%=link_to 'Create Cocktail', new_cocktail_path %>
+            <%= link_to "show cocktail", cocktail_path(cocktail)%>
+            <%= link_to "Delete", method: :delete %>
+            <%=link_to 'Create Cocktail', new_cocktail_path %>
       </div>
     <% end %> 
   </div>     
