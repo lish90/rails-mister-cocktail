@@ -5,35 +5,21 @@
 }
 
 .card_title {
-  height: 180px;
+  height: 180rem;
+  width: max-content;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border: grey;
   position: relative;
     h2 {
-      color: white;
+      color:black;
       justify-content: center;
       font-size: 16px;
       font-weight: grey;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    .card_img {
-      // background-image: url(".../images/alcohol-beverage-beverage-citrus.jpg");
-      // background-repeat: no-repeat;
-      background-size: auto;
-      position: absolute;
-      padding: 25px;
     }
-  }
 }
 
-
-
-// a {
-//   color: grey;
-//   &:hover {
-//     color: black;
-//   }
-// }
 .card_show{
   padding: 16px;
   display: flex;

@@ -1,10 +1,7 @@
-
-    <br>
    <div class="row">
     <div class="col-8"> 
-
-      <div class="card_title ">
         <% @cocktails.each do |cocktail| %>
+          <div class="card_title ">
           <div class="card p-3 mb-3">
             <h2><%= cocktail.name %></h2>
             <%= image_tag "alcoholic-citrus.jpg", alt: "alcoholic-citrus", class: "card_img",width: 400, height: 300 %>
@@ -15,13 +12,13 @@
       </div>
         <%=link_to 'Create Cocktail', new_cocktail_path %>
       </div>
-        </div> 
-       <div class="col-4">
+      </div> 
+      <div class="col-4">
         <h2>Create a Cocktail</h2>
         <img src="" alt="">
         <br> 
-   </div> 
+        </div> 
 
-<img src="https://images.unsplash.com/photo-1513816861509-09733a9f9383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="cocktail style=">
+        <img src="https://images.unsplash.com/photo-1513816861509-09733a9f9383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="cocktail style=">
 
 <%= link_to "Delete", method: :delete %>
