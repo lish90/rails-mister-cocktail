@@ -6,7 +6,7 @@
         <h2><%= cocktail.name %></h2>
           <%= image_tag "alcoholic-citrus.jpg", alt: "alcoholic-citrus", class: "card_img",width: 400, height: 300 %>
             <br>
-              <p><%= link_to "show cocktail", cocktail_path(cocktail)%></p>
+              <%= link_to "show cocktail", cocktail_path(cocktail)%>
               <%= link_to "Delete", method: :delete %>
               <%=link_to 'Create Cocktail', new_cocktail_path %>
       </div>
