@@ -15,12 +15,14 @@ ingredients['drinks'].each do |ingredient|
 end
 
 puts 'drinks'
-Cocktail.create(name: 'Mojito')
-Cocktail.create(name: 'Long Island Iced Tea')
-Cocktail.create(name: 'Caipirinha')
-Cocktail.create(name: 'Moscow Mule')
-Cocktail.create(name: 'Daiquiri')
-Cocktail.create(name: 'Old Fashioned')
+Cocktail.create(name: 'Mojito', picture_url:'https://unsplash.com/photos/cROF56xQhes')
+Cocktail.create(name: 'Long Island Iced Tea', picture_url: 'https://unsplash.com/photos/2qnyu0DP2JI')
+Cocktail.create(name: 'Caipirinha', picture_url: 'https://unsplash.com/photos/SwyGsjp7eiQ')
+Cocktail.create(name: 'Moscow Mule', picture_url: 'https://unsplash.com/photos/kbch-i63YTg')
+Cocktail.create(name: 'Daiquiri', picture_url: 'https://unsplash.com/photos/ZpY88WxjuDI')
+Cocktail.create(name: 'Old Fashioned', picture_url:'https://unsplash.com/photos/bcXKAI-0Zx0')
+
+
 
 descriptions = ["2 spoon of", "4 splash of", "3 pieces of", "2l of"]
 
