@@ -1,8 +1,11 @@
 <div class="row">
   <div class="col-8"> 
   <br>
-    <% @cocktails.each do |cocktail| %>
-      <div class="card p-3 mb-3  card_title ">
+    <div class="movie_homepage">
+    </div>
+    <br>
+      <% @cocktails.each do |cocktail| %>
+        <div class="card p-3 mb-3  card_title ">
         <h2><%= cocktail.name %></h2>
           <div class="card-image">
             <image_tag "cocktail.picture_url">
@@ -13,8 +16,8 @@
             <%= link_to "Delete", method: :delete %>
             <%=link_to 'Create Cocktail', new_cocktail_path %>
           </div>
-      </div>
-    <% end %> 
+        </div>
+      <% end %> 
   </div>     
 </div> 
 
